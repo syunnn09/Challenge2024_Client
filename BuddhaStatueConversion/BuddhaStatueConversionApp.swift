@@ -12,6 +12,7 @@ struct BuddhaStatueConversionApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ToolbarManager.shared)
         }
     }
 }

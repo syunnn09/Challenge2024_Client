@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF4FA5F12CD7E752007974F2 /* RoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FA5F02CD7E751007974F2 /* RoundedButtonStyle.swift */; };
+		FF4FA5F32CD7ED1F007974F2 /* LandingView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FA5F22CD7ED1F007974F2 /* LandingView2.swift */; };
+		FF4FA5F52CD7FC4E007974F2 /* CameraView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FA5F42CD7FC4E007974F2 /* CameraView2.swift */; };
 		FF70381A2C6DD76500A81EF2 /* BuddhaStatueConversionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7038192C6DD76500A81EF2 /* BuddhaStatueConversionApp.swift */; };
 		FF70381C2C6DD76500A81EF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70381B2C6DD76500A81EF2 /* ContentView.swift */; };
 		FF70381E2C6DD76800A81EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF70381D2C6DD76800A81EF2 /* Assets.xcassets */; };
@@ -26,9 +29,15 @@
 		FF7038432C6F9D4900A81EF2 /* AccountRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7038422C6F9D4900A81EF2 /* AccountRegisterView.swift */; };
 		FF7038452C6FAF4600A81EF2 /* AddressUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7038442C6FAF4600A81EF2 /* AddressUtils.swift */; };
 		FF7038472C7945B700A81EF2 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7038462C7945B700A81EF2 /* LandingView.swift */; };
+		FF8BBA292CE4FC3C0006883B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8BBA282CE4FC3C0006883B /* ProfileView.swift */; };
+		FF8BBA2E2CE50B9A0006883B /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FF8BBA2D2CE50B9A0006883B /* AlamofireDynamic */; };
+		FFF31C312CC894AB00348581 /* ToolbarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF31C302CC894AB00348581 /* ToolbarManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF4FA5F02CD7E751007974F2 /* RoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonStyle.swift; sourceTree = "<group>"; };
+		FF4FA5F22CD7ED1F007974F2 /* LandingView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView2.swift; sourceTree = "<group>"; };
+		FF4FA5F42CD7FC4E007974F2 /* CameraView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView2.swift; sourceTree = "<group>"; };
 		FF7038162C6DD76500A81EF2 /* BuddhaStatueConversion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddhaStatueConversion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7038192C6DD76500A81EF2 /* BuddhaStatueConversionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddhaStatueConversionApp.swift; sourceTree = "<group>"; };
 		FF70381B2C6DD76500A81EF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +53,9 @@
 		FF7038422C6F9D4900A81EF2 /* AccountRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegisterView.swift; sourceTree = "<group>"; };
 		FF7038442C6FAF4600A81EF2 /* AddressUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressUtils.swift; sourceTree = "<group>"; };
 		FF7038462C7945B700A81EF2 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		FF8BBA282CE4FC3C0006883B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FFF31C2F2CC8909800348581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FFF31C302CC894AB00348581 /* ToolbarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 				FF7038392C6DF4FF00A81EF2 /* FirebaseAppCheck in Frameworks */,
 				FF7038332C6DF4FF00A81EF2 /* FirebaseAnalytics in Frameworks */,
 				FF70383B2C6DF4FF00A81EF2 /* FirebaseAppDistribution-Beta in Frameworks */,
+				FF8BBA2E2CE50B9A0006883B /* AlamofireDynamic in Frameworks */,
 				FF7038372C6DF4FF00A81EF2 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				FF7038352C6DF4FF00A81EF2 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 			);
@@ -81,6 +94,7 @@
 		FF7038182C6DD76500A81EF2 /* BuddhaStatueConversion */ = {
 			isa = PBXGroup;
 			children = (
+				FFF31C2F2CC8909800348581 /* Info.plist */,
 				FF7038192C6DD76500A81EF2 /* BuddhaStatueConversionApp.swift */,
 				FF70381B2C6DD76500A81EF2 /* ContentView.swift */,
 				FF70382D2C6DE52E00A81EF2 /* LoginView.swift */,
@@ -93,8 +107,13 @@
 				FF70383C2C6DF73800A81EF2 /* SignupViewController.swift */,
 				FF70383E2C6DFDE600A81EF2 /* HomeView.swift */,
 				FF7038402C6E0CFE00A81EF2 /* RecentImageView.swift */,
-				FF7038442C6FAF4600A81EF2 /* AddressUtils.swift */,
 				FF7038462C7945B700A81EF2 /* LandingView.swift */,
+				FF4FA5F22CD7ED1F007974F2 /* LandingView2.swift */,
+				FF7038442C6FAF4600A81EF2 /* AddressUtils.swift */,
+				FFF31C302CC894AB00348581 /* ToolbarManager.swift */,
+				FF4FA5F02CD7E751007974F2 /* RoundedButtonStyle.swift */,
+				FF4FA5F42CD7FC4E007974F2 /* CameraView2.swift */,
+				FF8BBA282CE4FC3C0006883B /* ProfileView.swift */,
 			);
 			path = BuddhaStatueConversion;
 			sourceTree = "<group>";
@@ -129,6 +148,8 @@
 				FF7038362C6DF4FF00A81EF2 /* FirebaseAnalyticsWithoutAdIdSupport */,
 				FF7038382C6DF4FF00A81EF2 /* FirebaseAppCheck */,
 				FF70383A2C6DF4FF00A81EF2 /* FirebaseAppDistribution-Beta */,
+				FF8BBA2B2CE50B9A0006883B /* Alamofire */,
+				FF8BBA2D2CE50B9A0006883B /* AlamofireDynamic */,
 			);
 			productName = BuddhaStatueConversion;
 			productReference = FF7038162C6DD76500A81EF2 /* BuddhaStatueConversion.app */;
@@ -160,6 +181,7 @@
 			mainGroup = FF70380D2C6DD76400A81EF2;
 			packageReferences = (
 				FF7038312C6DF43C00A81EF2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				FF8BBA2A2CE50B9A0006883B /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = FF7038172C6DD76500A81EF2 /* Products */;
 			projectDirPath = "";
@@ -190,13 +212,18 @@
 				FF7038472C7945B700A81EF2 /* LandingView.swift in Sources */,
 				FF7038302C6DF41900A81EF2 /* AppDelegate.swift in Sources */,
 				FF7038432C6F9D4900A81EF2 /* AccountRegisterView.swift in Sources */,
+				FF4FA5F52CD7FC4E007974F2 /* CameraView2.swift in Sources */,
 				FF70383D2C6DF73800A81EF2 /* SignupViewController.swift in Sources */,
 				FF7038282C6DD77900A81EF2 /* Camera.swift in Sources */,
 				FF7038412C6E0CFF00A81EF2 /* RecentImageView.swift in Sources */,
 				FF70381C2C6DD76500A81EF2 /* ContentView.swift in Sources */,
 				FF70381A2C6DD76500A81EF2 /* BuddhaStatueConversionApp.swift in Sources */,
+				FF8BBA292CE4FC3C0006883B /* ProfileView.swift in Sources */,
+				FF4FA5F12CD7E752007974F2 /* RoundedButtonStyle.swift in Sources */,
 				FF70383F2C6DFDE600A81EF2 /* HomeView.swift in Sources */,
+				FF4FA5F32CD7ED1F007974F2 /* LandingView2.swift in Sources */,
 				FF70382E2C6DE52E00A81EF2 /* LoginView.swift in Sources */,
+				FFF31C312CC894AB00348581 /* ToolbarManager.swift in Sources */,
 				FF70382C2C6DDAB500A81EF2 /* CameraView.swift in Sources */,
 				FF7038452C6FAF4600A81EF2 /* AddressUtils.swift in Sources */,
 			);
@@ -335,6 +362,7 @@
 				DEVELOPMENT_TEAM = B74ARS8PR4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BuddhaStatueConversion/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -365,6 +393,7 @@
 				DEVELOPMENT_TEAM = B74ARS8PR4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BuddhaStatueConversion/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -416,6 +445,14 @@
 				minimumVersion = 11.0.0;
 			};
 		};
+		FF8BBA2A2CE50B9A0006883B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -443,6 +480,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FF7038312C6DF43C00A81EF2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseAppDistribution-Beta";
+		};
+		FF8BBA2B2CE50B9A0006883B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF8BBA2A2CE50B9A0006883B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FF8BBA2D2CE50B9A0006883B /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF8BBA2A2CE50B9A0006883B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

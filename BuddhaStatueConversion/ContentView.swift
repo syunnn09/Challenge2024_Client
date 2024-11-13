@@ -8,41 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
-
     @State var showingCamera = false
+    @EnvironmentObject var manager: ToolbarManager
 
     var body: some View {
         NavigationView {
             LoginView()
 
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    NavigationLink {
-                        CameraView(image: .constant(UIImage()))
-                    } label: {
-                        Button {
-                            
+                if !ToolbarManager.shared.isHidden {
+                    ToolbarItem(placement: .topBarLeading) {
+                        NavigationLink {
+                            CameraView(image: .constant(UIImage()))
                         } label: {
-                            Image(systemName: "person")
+                            Button {
+                                
+                            } label: {
+                                Image(systemName: "person")
+                            }
                         }
                     }
-                }
 
-                ToolbarItem(placement: .principal) {
-                    Text("Buddha Statue")
-                }
-
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        showingCamera = true
-                    } label: {
-                        Image(systemName: "gear")
+                    ToolbarItem(placement: .principal) {
+                        Text("Buddha Statue")
                     }
                 }
             }
         }
         .sheet(isPresented: $showingCamera) {
-            HomeView()
+            NavigationView {
+                HomeView()
+                    .navigationBarTitleDisplayMode(.inline)
+            }
         }
     }
 }

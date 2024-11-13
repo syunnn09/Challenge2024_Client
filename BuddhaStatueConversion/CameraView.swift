@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CameraView: View {
-    @Binding var image : UIImage?
+    @Binding var image: UIImage?
     @State var showingCamera: Bool = false
 
     var body: some View {
@@ -16,7 +16,7 @@ struct CameraView: View {
             if (image != nil) {
                 Image(uiImage: self.image!)
                     .resizable()
-                    .frame(width: 300, height: 150)
+                    .frame(width: self.image!.size.width / 10, height: self.image!.size.height / 10)
             }
 
             Button(action: {
@@ -27,6 +27,15 @@ struct CameraView: View {
             .sheet(isPresented: $showingCamera, content: {
                 Camera(image: $image, showingCamera: $showingCamera)
             })
+            .onChange(of: self.image) {
+                print(self.image!.size.width, self.image!.size.height)
+            }
+        }
+        .onAppear {
+            ToolbarManager.shared.isHidden = true
+        }
+        .onDisappear {
+            ToolbarManager.shared.isHidden = false
         }
     }
 }

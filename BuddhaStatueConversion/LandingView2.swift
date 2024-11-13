@@ -1,5 +1,5 @@
 //
-//  LandingView.swift
+//  LandingView2.swift
 //  BuddhaStatueConversion
 //
 //  Created by shusuke imamura on 2024/08/24.
@@ -7,16 +7,15 @@
 
 import SwiftUI
 
-struct LandingView: View {
+struct LandingView2: View {
     @State var goNext = false
-    @State var skipped = false
-
+    
     var body: some View {
         NavigationStack {
             VStack {
                 Spacer()
 
-                Image("landing1")
+                Image("landing2")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300, height: 300)
@@ -31,24 +30,13 @@ struct LandingView: View {
 
                 Spacer()
 
-                PrimaryButton(title: "続ける") {
+                PrimaryButton(title: "さあ、始めよう！") {
                     goNext = true
                 }
                 .navigationDestination(isPresented: $goNext) {
-                    LandingView2()
-                }
-                .padding(.bottom, 10)
-
-                Button {
-                    skipped = true
-                } label: {
-                    Text("スキップする")
-                        .foregroundStyle(Color(hex: "555555"))
-                }
-                .buttonStyle(.plain)
-                .navigationDestination(isPresented: $skipped) {
                     HomeView()
                 }
+                .padding(.bottom, 35)
 
                 Spacer()
             }

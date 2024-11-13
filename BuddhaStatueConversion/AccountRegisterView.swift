@@ -169,6 +169,12 @@ struct AccountRegisterView: View {
                 .navigationTitle("アカウント作成")
             }
         }
+        .onAppear {
+            ToolbarManager.shared.isHidden = true
+        }
+        .onDisappear {
+            ToolbarManager.shared.isHidden = false
+        }
     }
 }
 
